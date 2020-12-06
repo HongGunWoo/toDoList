@@ -1,68 +1,9 @@
+@import "reset.css";
+
 body{
-    font-family: 'Gamja Flower', cursive;    text-align: center;
-    margin-top: 160px;
-}
-
-#whatToDo{
-    display: block;
+    font-family: 'Poor Story';
+    align-self: flex-start;
     color: aliceblue;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-h1{
-    margin-bottom: 0px;
-}
-
-.js-weather{
-    font-size: 1.5rem;
-    color: aliceblue;
-    position: fixed;
-    right: 15px;
-    top: 15px;
-}
-
-.js-clock{
-    font-size: 3.5rem;
-    color: aliceblue;
-}
-
-.js-greetings{
-    font-size: 2.5rem;
-    color: aliceblue;
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-li{
-    display: block;
-    font-size: 2rem;
-    margin: 5px;
-    color: aliceblue;
-}
-
-input{
-    color:aliceblue;
-    font-size: 26px;
-    background: transparent;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: solid 4px aliceblue;
-}
-
-input:focus {
-    font-family: 'Gamja Flower', cursive;    text-align: center;
-    outline: 0;
-    outline-offset: 0;
-    border-bottom: solid 4px aliceblue;
-}
-
-button{
-    font-size: 1.5rem;
-    color: #2ecc71;
-    background: transparent;
-    border: 0;
 }
 
 body::before {
@@ -76,13 +17,70 @@ body::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px); */
-    filter: saturate(190%) blur(2px);
+    -webkit-filter: saturate(190%) blur(3px);
+    -moz-filter: saturate(190%) blur(3px);
+    -o-filter: saturate(190%) blur(3px);
+    -ms-filter: saturate(190%) blur(3px);
+    filter: saturate(190%) blur(3px) grayscale(35%);
     z-index: -1;
     content: "";
+}
+
+#flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+#flex_item{
+    margin: 5px;
+}
+
+.js-weather{
+    text-align: right;
+    position: fixed;
+    right: 13px;
+    top: 13px;
+    font-size: 0.5rem;
+    font-family : Rubik;
+}
+
+.js-clock{
+    font-size: 4rem;
+    color: #a5f5b9;
+}
+
+.whatToDo{
+    font-size: 1.5rem;
+}
+
+input{
+    color:aliceblue;
+    font-size: 5px;
+    background: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: solid 3px aliceblue;
+}
+
+input:focus {
+    font-size: 1rem;
+    font-family: 'Poor Story';
+    text-align: center;
+    outline: 0;
+    outline-offset: 0;
+    border-bottom: solid 2px aliceblue;
+
+}
+
+input::placeholder {
+    font-size: 0.8rem;
+    color: aliceblue;
+    font-family: 'Poor Story';
+    text-align: center;
 }
 
 .form, .greetings{
@@ -91,4 +89,20 @@ body::before {
 
 .showing{
     display: block;
+}
+
+.js-greetings{
+    font-size: 1.7rem;
+}
+
+li{
+    font-size: 1.5rem;
+    margin: 7px;
+}
+
+button{
+    font-size: 1rem;
+    color: #16a351;
+    background: transparent;
+    border: 0;
 }
