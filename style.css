@@ -1,0 +1,94 @@
+body{
+    font-family: 'Gamja Flower', cursive;    text-align: center;
+    margin-top: 160px;
+}
+
+#whatToDo{
+    display: block;
+    color: aliceblue;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h1{
+    margin-bottom: 0px;
+}
+
+.js-weather{
+    font-size: 1.5rem;
+    color: aliceblue;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+}
+
+.js-clock{
+    font-size: 3.5rem;
+    color: aliceblue;
+}
+
+.js-greetings{
+    font-size: 2.5rem;
+    color: aliceblue;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+li{
+    display: block;
+    font-size: 2rem;
+    margin: 5px;
+    color: aliceblue;
+}
+
+input{
+    color:aliceblue;
+    font-size: 26px;
+    background: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: solid 4px aliceblue;
+}
+
+input:focus {
+    font-family: 'Gamja Flower', cursive;    text-align: center;
+    outline: 0;
+    outline-offset: 0;
+    border-bottom: solid 4px aliceblue;
+}
+
+button{
+    font-size: 1.5rem;
+    color: #2ecc71;
+    background: transparent;
+    border: 0;
+}
+
+body::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(mi1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px); */
+    filter: saturate(190%) blur(2px);
+    z-index: -1;
+    content: "";
+}
+
+.form, .greetings{
+    display: none;
+}
+
+.showing{
+    display: block;
+}
